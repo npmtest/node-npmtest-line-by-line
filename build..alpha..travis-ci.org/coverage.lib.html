@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-line-by-line/line-by-line/line-by-line.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-line-by-line/node_modules/line-by-line/line-by-line.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-line-by-line">npmtest-line-by-line (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-line-by-line/line-by-line/line-by-line.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-line-by-line/node_modules/line-by-line/line-by-line.js</span></h1>
     <h2>
         
         Statements: <span class="metric">16.46% <small>(13 / 79)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-line-by-line/line-by-line/</a> » line-by-line.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-line-by-line/node_modules/line-by-line/</a> &#187; line-by-line.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -541,35 +543,35 @@ var fs = require('fs');
 var events = require("events");
 &nbsp;
 // let's make sure we have a setImmediate function (node.js &lt;0.10)
-<span class="missing-if-branch" title="if path not taken">I</span>if (typeof global.setImmediate == 'undefined') { <span class="cstat-no" title="statement not covered">setImmediate = process.nextTick;}</span>
+<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof global.setImmediate == 'undefined') { <span class="cstat-no" title="statement not covered" >setImmediate = process.nextTick;}</span>
 &nbsp;
-var LineByLineReader = <span class="fstat-no" title="function not covered">function (filepath, options) {</span>
-<span class="cstat-no" title="statement not covered">	var self = this;</span>
+var LineByLineReader = <span class="fstat-no" title="function not covered" >function (filepath, options) {</span>
+<span class="cstat-no" title="statement not covered" >	var self = this;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	this._filepath = path.normalize(filepath);</span>
-<span class="cstat-no" title="statement not covered">	this._encoding = options &amp;&amp; options.encoding || 'utf8';</span>
-<span class="cstat-no" title="statement not covered">	this._skipEmptyLines = options &amp;&amp; options.skipEmptyLines || false;</span>
-<span class="cstat-no" title="statement not covered">	this._streamOptions = { encoding: this._encoding };</span>
+<span class="cstat-no" title="statement not covered" >	this._filepath = path.normalize(filepath);</span>
+<span class="cstat-no" title="statement not covered" >	this._encoding = options &amp;&amp; options.encoding || 'utf8';</span>
+<span class="cstat-no" title="statement not covered" >	this._skipEmptyLines = options &amp;&amp; options.skipEmptyLines || false;</span>
+<span class="cstat-no" title="statement not covered" >	this._streamOptions = { encoding: this._encoding };</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (options &amp;&amp; options.start) {</span>
-<span class="cstat-no" title="statement not covered">		this._streamOptions.start = options.start;</span>
+<span class="cstat-no" title="statement not covered" >	if (options &amp;&amp; options.start) {</span>
+<span class="cstat-no" title="statement not covered" >		this._streamOptions.start = options.start;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (options &amp;&amp; options.end) {</span>
-<span class="cstat-no" title="statement not covered">		this._streamOptions.end = options.end;</span>
+<span class="cstat-no" title="statement not covered" >	if (options &amp;&amp; options.end) {</span>
+<span class="cstat-no" title="statement not covered" >		this._streamOptions.end = options.end;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	this._readStream = null;</span>
-<span class="cstat-no" title="statement not covered">	this._lines = [];</span>
-<span class="cstat-no" title="statement not covered">	this._lineFragment = '';</span>
-<span class="cstat-no" title="statement not covered">	this._paused = false;</span>
-<span class="cstat-no" title="statement not covered">	this._end = false;</span>
-<span class="cstat-no" title="statement not covered">	this._ended = false;</span>
+<span class="cstat-no" title="statement not covered" >	this._readStream = null;</span>
+<span class="cstat-no" title="statement not covered" >	this._lines = [];</span>
+<span class="cstat-no" title="statement not covered" >	this._lineFragment = '';</span>
+<span class="cstat-no" title="statement not covered" >	this._paused = false;</span>
+<span class="cstat-no" title="statement not covered" >	this._end = false;</span>
+<span class="cstat-no" title="statement not covered" >	this._ended = false;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	events.EventEmitter.call(this);</span>
+<span class="cstat-no" title="statement not covered" >	events.EventEmitter.call(this);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		self._initStream();</span>
+<span class="cstat-no" title="statement not covered" >	setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		self._initStream();</span>
 	});
 };
 &nbsp;
@@ -580,115 +582,114 @@ LineByLineReader.prototype = Object.create(events.EventEmitter.prototype, {
 	}
 });
 &nbsp;
-LineByLineReader.prototype._initStream = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	var self = this,</span>
+LineByLineReader.prototype._initStream = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	var self = this,</span>
 		readStream = fs.createReadStream(this._filepath, this._streamOptions);
 &nbsp;
-<span class="cstat-no" title="statement not covered">	readStream.on('error', <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">		self.emit('error', err);</span>
+<span class="cstat-no" title="statement not covered" >	readStream.on('error', <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >		self.emit('error', err);</span>
 	});
 &nbsp;
-<span class="cstat-no" title="statement not covered">	readStream.on('open', <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		self.emit('open');</span>
+<span class="cstat-no" title="statement not covered" >	readStream.on('open', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		self.emit('open');</span>
 	});
 &nbsp;
-<span class="cstat-no" title="statement not covered">	readStream.on('data', <span class="fstat-no" title="function not covered">function (data) {</span></span>
-<span class="cstat-no" title="statement not covered">		self._readStream.pause();</span>
-<span class="cstat-no" title="statement not covered">		self._lines = self._lines.concat(data.split(/(?:\n|\r\n|\r)/g));</span>
+<span class="cstat-no" title="statement not covered" >	readStream.on('data', <span class="fstat-no" title="function not covered" >function (data) {</span></span>
+<span class="cstat-no" title="statement not covered" >		self._readStream.pause();</span>
+<span class="cstat-no" title="statement not covered" >		self._lines = self._lines.concat(data.split(/(?:\n|\r\n|\r)/g));</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		self._lines[0] = self._lineFragment + self._lines[0];</span>
-<span class="cstat-no" title="statement not covered">		self._lineFragment = self._lines.pop() || '';</span>
+<span class="cstat-no" title="statement not covered" >		self._lines[0] = self._lineFragment + self._lines[0];</span>
+<span class="cstat-no" title="statement not covered" >		self._lineFragment = self._lines.pop() || '';</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">			self._nextLine();</span>
+<span class="cstat-no" title="statement not covered" >		setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >			self._nextLine();</span>
 		});
 	});
 &nbsp;
-<span class="cstat-no" title="statement not covered">	readStream.on('end', <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		self._end = true;</span>
+<span class="cstat-no" title="statement not covered" >	readStream.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		self._end = true;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">			self._nextLine();</span>
+<span class="cstat-no" title="statement not covered" >		setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >			self._nextLine();</span>
 		});
 	});
 &nbsp;
-<span class="cstat-no" title="statement not covered">	this._readStream = readStream;</span>
+<span class="cstat-no" title="statement not covered" >	this._readStream = readStream;</span>
 };
 &nbsp;
-LineByLineReader.prototype._nextLine = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	var self = this,</span>
+LineByLineReader.prototype._nextLine = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	var self = this,</span>
 		line;
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (this._paused) {</span>
-<span class="cstat-no" title="statement not covered">		return;</span>
+<span class="cstat-no" title="statement not covered" >	if (this._paused) {</span>
+<span class="cstat-no" title="statement not covered" >		return;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (this._lines.length === 0) {</span>
-<span class="cstat-no" title="statement not covered">		if (this._end) {</span>
-<span class="cstat-no" title="statement not covered">			if (this._lineFragment) {</span>
-<span class="cstat-no" title="statement not covered">				this.emit('line', this._lineFragment);</span>
-<span class="cstat-no" title="statement not covered">				this._lineFragment = '';</span>
+<span class="cstat-no" title="statement not covered" >	if (this._lines.length === 0) {</span>
+<span class="cstat-no" title="statement not covered" >		if (this._end) {</span>
+<span class="cstat-no" title="statement not covered" >			if (this._lineFragment) {</span>
+<span class="cstat-no" title="statement not covered" >				this.emit('line', this._lineFragment);</span>
+<span class="cstat-no" title="statement not covered" >				this._lineFragment = '';</span>
 			}
-<span class="cstat-no" title="statement not covered">			this.end();</span>
+<span class="cstat-no" title="statement not covered" >			this.end();</span>
 		} else {
-<span class="cstat-no" title="statement not covered">			this._readStream.resume();</span>
+<span class="cstat-no" title="statement not covered" >			this._readStream.resume();</span>
 		}
-<span class="cstat-no" title="statement not covered">		return;</span>
+<span class="cstat-no" title="statement not covered" >		return;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	line = this._lines.shift();</span>
+<span class="cstat-no" title="statement not covered" >	line = this._lines.shift();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	if (!this._skipEmptyLines || line.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered">		this.emit('line', line);</span>
+<span class="cstat-no" title="statement not covered" >	if (!this._skipEmptyLines || line.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >		this.emit('line', line);</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered">	setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		if (!this._paused) {</span>
-<span class="cstat-no" title="statement not covered">			self._nextLine();</span>
+<span class="cstat-no" title="statement not covered" >	setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (!this._paused) {</span>
+<span class="cstat-no" title="statement not covered" >			self._nextLine();</span>
 		}
 	});
 };
 &nbsp;
-LineByLineReader.prototype.pause = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	this._paused = true;</span>
+LineByLineReader.prototype.pause = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	this._paused = true;</span>
 };
 &nbsp;
-LineByLineReader.prototype.resume = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	var self = this;</span>
+LineByLineReader.prototype.resume = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	var self = this;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	this._paused = false;</span>
+<span class="cstat-no" title="statement not covered" >	this._paused = false;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		self._nextLine();</span>
+<span class="cstat-no" title="statement not covered" >	setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		self._nextLine();</span>
 	});
 };
 &nbsp;
-LineByLineReader.prototype.end = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	if (!this._ended){</span>
-<span class="cstat-no" title="statement not covered">		this._ended = true;</span>
-<span class="cstat-no" title="statement not covered">		this.emit('end');</span>
+LineByLineReader.prototype.end = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	if (!this._ended){</span>
+<span class="cstat-no" title="statement not covered" >		this._ended = true;</span>
+<span class="cstat-no" title="statement not covered" >		this.emit('end');</span>
 	}
 };
 &nbsp;
-LineByLineReader.prototype.close = <span class="fstat-no" title="function not covered">function () {</span>
-<span class="cstat-no" title="statement not covered">	var self = this;</span>
+LineByLineReader.prototype.close = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	var self = this;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	this._readStream.destroy();</span>
-<span class="cstat-no" title="statement not covered">	this._end = true;</span>
+<span class="cstat-no" title="statement not covered" >	this._readStream.destroy();</span>
+<span class="cstat-no" title="statement not covered" >	this._end = true;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	setImmediate(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">		self._nextLine();</span>
+<span class="cstat-no" title="statement not covered" >	setImmediate(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		self._nextLine();</span>
 	});
 };
 &nbsp;
 module.exports = LineByLineReader;
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 22:06:12 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:32:15 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
