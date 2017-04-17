@@ -1,7 +1,7 @@
 # test coverage for  [line-by-line (v0.1.5)](https://github.com/Osterjour/line-by-line)  [![npm package](https://img.shields.io/npm/v/npmtest-line-by-line.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-line-by-line) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-line-by-line.svg)](https://travis-ci.org/npmtest/node-npmtest-line-by-line)
 #### A NodeJS module that helps you reading large text files, line by line, without buffering the files into memory.
 
-[![NPM](https://nodei.co/npm/line-by-line.png?downloads=true)](https://www.npmjs.com/package/line-by-line)
+[![NPM](https://nodei.co/npm/line-by-line.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/line-by-line)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-line-by-line/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-line-by-line/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-line-by-line/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-line-by-line/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-line-by-line/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-line-by-line/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-line-by-line/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-line-by-line/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-line-by-line%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-line-by-line/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-line-by-line/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-line-by-line/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-line-by-line%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-line-by-line/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.html](https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-line-by-line/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-line-by-line/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-line-by-line/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-line-by-line/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-line-by-line/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-line-by-line/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-line-by-line/build/screenCapture.npmPackageListing.svg)
 
@@ -27,16 +33,14 @@
 
 {
     "author": {
-        "name": "Markus Ostertag",
-        "email": "mo@mo-its.de"
+        "name": "Markus Ostertag"
     },
     "bugs": {
         "url": "https://github.com/Osterjour/line-by-line/issues"
     },
     "contributors": [
         {
-            "name": "Markus von der Wehd",
-            "email": "mvdw@mwin.de"
+            "name": "Markus von der Wehd"
         }
     ],
     "dependencies": {},
@@ -69,13 +73,11 @@
     "main": "line-by-line.js",
     "maintainers": [
         {
-            "name": "osterjour",
-            "email": "mo@mo-its.de"
+            "name": "osterjour"
         }
     ],
     "name": "line-by-line",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/Osterjour/line-by-line.git"
