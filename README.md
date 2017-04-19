@@ -1,4 +1,7 @@
-# test coverage for  [line-by-line (v0.1.5)](https://github.com/Osterjour/line-by-line)  [![npm package](https://img.shields.io/npm/v/npmtest-line-by-line.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-line-by-line) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-line-by-line.svg)](https://travis-ci.org/npmtest/node-npmtest-line-by-line)
+# npmtest-line-by-line
+
+#### basic test coverage for  [line-by-line (v0.1.5)](https://github.com/Osterjour/line-by-line)  [![npm package](https://img.shields.io/npm/v/npmtest-line-by-line.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-line-by-line) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-line-by-line.svg)](https://travis-ci.org/npmtest/node-npmtest-line-by-line)
+
 #### A NodeJS module that helps you reading large text files, line by line, without buffering the files into memory.
 
 [![NPM](https://nodei.co/npm/line-by-line.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/line-by-line)
